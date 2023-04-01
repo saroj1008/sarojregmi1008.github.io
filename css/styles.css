@@ -388,54 +388,111 @@ header {
   background-color: var(--main-color);
 }
 
-.contact-form {
-  display: grid;
-  place-items: center;
-  margin-top: 2rem;
+.contact-container {
+  display: flex;
+}
+/* .contact-form { */
+/* display: grid; */
+/* place-items: center; */
+/* margin-top: 2rem; */
+/* } */
+
+/* .contact-form form { */
+/* display: flex; */
+/* flex-direction: column; */
+/* width: 650px; */
+/* } */
+/*  */
+.skills-list {
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+  font-size: 1.6rem;
+  background: rgba(153, 153, 153, 0.2);
+  border-radius: 5px;
+  font-weight: 600;
+  color: #777;
 }
 
-.contact-form form {
+.contact-container {
+  margin-top: 2rem;
   display: flex;
-  flex-direction: column;
-  width: 650px;
-}
-form input,
-textarea {
-  padding: 15px;
-  border-radius: 0.5rem;
-  width: 100%;
-  border: none;
-  outline: none;
-  background: hsla(260, 100%, 44%, 0.1);
-  margin-bottom: 1rem;
-  color: var(--text-color);
-}
-form input::placeholder,
-textarea::placeholder {
-  color: var(--text-color);
-}
-form textarea {
-  resize: none;
-  height: 200px;
-}
-.contact-button {
-  width: 160px;
-  cursor: pointer;
-  background: #2768d9;
-  color: #fff;
+  flex-wrap: wrap;
   justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-left: 35%;
+  gap: 2rem;
 }
-.contact-button:hover {
-  background: var(--hover);
+
+/* Working here */
+.contact-info {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  background: #777;
+  border-radius: 5px;
+  font-weight: 600;
+  color: black;
 }
+
+i[contact-icon = "icon"] {
+  color: black;
+  font-size: 2.5rem;
+}
+.contact-info :hover {
+  cursor: pointer;
+  font-size: 1.9rem;
+  color: var(--hover);
+}
+
+.contact-text {
+  color: black; /* set the desired color for links */
+  text-decoration: none !important;
+}
+
+
+/*  */
+
+/* form input, */
+/* textarea { */
+/* padding: 15px; */
+/* border-radius: 0.5rem; */
+/* width: 100%; */
+/* border: none; */
+/* outline: none; */
+/* background: hsla(260, 100%, 44%, 0.1); */
+/* margin-bottom: 1rem; */
+/* color: var(--text-color); */
+/* } */
+/* form input::placeholder, */
+/* textarea::placeholder { */
+/* color: var(--text-color); */
+/* } */
+/* form textarea { */
+/* resize: none; */
+/* height: 200px; */
+/* } */
+
+/* .contact-button { */
+/* width: 160px; */
+/* cursor: pointer; */
+/* background: #2768d9; */
+/* color: #fff; */
+/* justify-content: center; */
+/* text-transform: uppercase; */
+/* letter-spacing: 1px; */
+/* margin-left: 35%; */
+/* } */
+
+/* .contact-button:hover { */
+/* background: var(--hover); */
+/* } */
+
 .footer {
   display: grid;
   place-items: center;
   padding: 20px;
-  background: #ebebeb;
+  background: var(--bg-color);
   color: #000;
 }
 .footer h2 {
@@ -545,12 +602,12 @@ form textarea {
     display: flex;
     justify-content: center;
   }
-  .contact-form form {
-    width: 300px;
-  }
-  .contact-button {
-    margin-left: 25%;
-  }
+  /* .contact-form form { */
+  /* width: 300px; */
+  /* } */
+  /* .contact-button { */
+  /* margin-left: 25%; */
+  /* } */
 }
 @media (max-width: 340px) {
   :root {
@@ -570,10 +627,54 @@ form textarea {
   .portfolio-content {
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   }
-  .contact-form form {
-    width: 300px;
-  }
-  .contact-button {
-    margin-left: 25%;
-  }
+  /* .contact-form form { */
+  /* width: 300px; */
+  /* } */
+  /* .contact-button { */
+  /* margin-left: 25%; */
+  /* } */
 }
+/*  */
+/*  */
+/* .contact { */
+/* background-color: #f2f2f2; */
+/* padding: 50px 0; */
+/* } */
+/*  */
+/* .contact .heading { */
+/* text-align: center; */
+/* margin-bottom: 50px; */
+/* } */
+/*  */
+/* .contact .heading h2 { */
+/* font-size: 40px; */
+/* margin: 0; */
+/* padding: 0; */
+/* } */
+/*  */
+/* .contact .heading span { */
+/* display: block; */
+/* font-size: 18px; */
+/* color: #777; */
+/* } */
+/*  */
+/* .contact .contact-info { */
+/* display: flex; */
+/* justify-content: center; */
+/* align-items: center; */
+/* } */
+/*  */
+/* .contact .contact-info a { */
+/* margin: 0 20px; */
+/* text-decoration: none; */
+/* color: #777; */
+/* } */
+/*  */
+/* .contact .contact-info a:hover { */
+/* color: #000; */
+/* } */
+/*  */
+/* .contact .contact-info .abc { */
+/* font-size: 24px; */
+/* margin-left: 10px; */
+/* } */
