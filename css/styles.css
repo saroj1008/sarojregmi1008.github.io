@@ -95,6 +95,17 @@ header {
   font-weight: bold;
 }
 
+marquee{
+  font-size: 40px;
+  font-weight: 800;
+  color:black;
+  }
+  /* @keyframes scroll { */
+    /* 0% { transform: translateX(0); } */
+    /* 100% { transform: translateX(-100%); } */
+  /* } */
+
+
 #menu-icon {
   font-size: 26px;
   cursor: pointer;
